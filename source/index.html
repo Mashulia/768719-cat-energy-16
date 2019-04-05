@@ -73,40 +73,33 @@
         </ol>
       </section>
       <section class="illustration">
-        <div class="illustration__data">
-          <h2 class="illustration__title main-title">Живой пример</h2>
-          <p class="illustration__description">
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-          </p>
-          <table class="illustration__table">
-            <tr class="illustration__item illustration__item--cell">
-              <td class="illustration__info illustration__info--kilo">5 кг</td>
-              <td class="illustration__data illustration__data--weight">снижение веса</td>
-            </tr>
-            <tr class="illustration__item illustration__item--cell">
-              <td class="illustration__info illustration__info--days">60 дней</td>
-              <td class="illustration__data illustration__data--time">затрачено времени</td>
-            </tr>
-            <tr class="illustration__item illustration__item--line">
-              <td class="illustration__pay illustration__pay--food">Затраты на питание:</td>
-              <td class="illustration__pay illustration__pay--rubles">15 000 руб.</td>
-            </tr>
-
-
-          </table>
+        <h2 class="illustration__title main-title">Живой пример</h2>
+        <p class="illustration__description">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
+        <div class="illustration__table">
+          <div class="illustration__numbers numbers">
+            <div class="numbers__item">
+              <span class="numbers__info numbers__info--kilo">5 кг</span>
+              <span class="numbers__data numbers__data--weight">снижение веса</span>
+            </div>
+            <div class="numbers__item">
+              <span class="numbers__info numbers__info--days">60 дней</span>
+              <span class="numbers__data numbers__data--time">затрачено времени</span>
+            </div>
+          </div>
+          <div class="illustration__expenses expenses">
+            <span class="expenses__pay expenses__pay--food">Затраты на питание:</span>
+            <span class="expenses__pay expenses__pay--rubles">15 000 руб.</span>
+          </div>
         </div>
-        <div class="illustration__slider">
-          <ul class="illustration__list slider-list">
-            <li class="illustration__cat slider-list__item">
-              <img class="illustration__image" src="img/fat-cat.png" width="311" height="232" alt="Изображен сидящий жирный кот">
-            </li>
-            <li class="illustration__cat slider-list__item">
-              <img class="illustration__image" src="img/slim-cat.png"  width="311" height="232" alt="Изображен сидящий худой кот">
-            </li>
-          </ul>
-          <label for="illustration__result">Было</label>
-          <input type="range" name="result" id="illustration__result">
-          <label for="illustration__result">Стало</label>
+        <div class="illustration__result">
+          <img class="illustration__image" src="img/fat-cat.png" width="311" height="232" alt="Изображение результата похудения на нашем питании">
+          <div class="illustration__toggles illustration-toggles">
+            <span class="illustration-toggles__text illustration-toggles__text--left">Было</span>
+            <div class="illustration-toggles__slider"></div>
+            <span class="illustration-toggles__text illustration-toggles__text--right">Стало</span>
+          </div>
         </div>
       </section>
       <div class="page-main__bottom-wrapper bottom-wrapper">
