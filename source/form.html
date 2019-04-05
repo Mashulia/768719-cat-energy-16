@@ -32,11 +32,11 @@
           <legend class="form__title visually-hidden">Общая информация о вашем коте</legend>
           <ul class="form__list common-list">
             <li class="common-list__item">
-              <label class="common-list__label label label--required" for="name">Имя:</label>
+              <label class="common-list__label label" for="name">Имя:*</label>
               <input class="common-list__input input" id="name" type="text" name="name" placeholder="Барсик">
             </li>
             <li class="common-list__item">
-              <label class="common-list__label label label--required" for="weight">Вес (кг):</label>
+              <label class="common-list__label label" for="weight">Вес (кг):*</label>
               <input class="common-list__input input" id="weight" type="number" name="weight" placeholder="7">
             </li>
             <li class="common-list__item">
@@ -66,11 +66,11 @@
           <legend class="form__title">Контактные данные (владельца кота)</legend>
           <ul class="form__list contacts-list">
             <li class="contacts-list__item">
-              <label class="contacts-list__label label--required label" for="mail">Имя:</label>
+              <label class="contacts-list__label label" for="mail">E-mail:*</label>
               <input class="contacts-list__input contacts-list__input--mail input" id="mail" type="email" name="mail" placeholder="kuklachev@gmail.com">
             </li>
             <li class="contacts-list__item">
-              <label class="contacts-list__label label--required label" for="tel">Имя:</label>
+              <label class="contacts-list__label label" for="tel">Телефон:*</label>
               <input class="contacts-list__input contacts-list__input--tel input" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90">
             </li>
           </ul>
@@ -102,7 +102,7 @@
           </ul>
         </fieldset>
         <button class="form__button button" type="button">Отправить заявку</button>
-        <span class="form__note form__note--required"> — Обязательные поля</span>
+        <span class="form__note">* — Обязательные поля</span>
       </form>
       <div class="page-main__bottom-wrapper bottom-wrapper">
         <section class="bottom-wrapper__contacts contacts">
