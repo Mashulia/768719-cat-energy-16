@@ -1,4 +1,35 @@
 .page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 39px 20px 22px 20px;
   background-color: @grey-color;
+}
+
+.page-footer__wrapper-logo {
+  width: 100%;
+  padding-bottom: 31px;
+  text-align: center;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.page-footer__logo {
+  width: 128px;
+  height: 24px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+}
+
+.page-footer__wrapper-list {
+  padding-top: 22px;
+  padding-bottom: 21px;
+  width: 100%;
+  border-bottom: 1px solid #cdcdcd;
 }
