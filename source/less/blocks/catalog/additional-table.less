@@ -1,0 +1,48 @@
+.additional-table__row {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  border-bottom: @border;
+}
+
+.additional-table__cell {
+  flex-shrink: 0;
+
+  &--head,
+  &--link {
+    width: 100%;
+  }
+
+  &--head {
+    padding-bottom: 15px;
+    line-height: 16px;
+    color: #222222;
+    text-transform: uppercase;
+  }
+
+  &--quantity {
+    padding-bottom: 17px;
+    width: 140px;
+    font-family: @font-text;
+    .text-typeface-1();
+    line-height: 14px;
+  }
+
+  &--price {
+    position: absolute;
+    left: 140px;
+    top: 44px;
+    width: 140px;
+    font-family: @font-text;
+    .text-typeface-1();
+    line-height: 14px;
+    text-align: right;
+  }
+}
+
+.additional-table__button {
+  padding-top: 11px;
+  padding-bottom: 12px;
+}
