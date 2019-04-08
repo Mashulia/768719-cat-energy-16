@@ -1,0 +1,36 @@
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  .reset-list();
+  width: 150px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.social-list__icon {
+  &:hover path,
+  &:focus path {
+    fill: @main-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--vkontakte {
+    width: 22px;
+    height: 12px;
+  }
+
+  &--instagram {
+    width: 17px;
+    height: 17px;
+  }
+
+  &--facebook {
+    width: 10px;
+    height: 19px;
+  }
+}

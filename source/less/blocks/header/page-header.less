@@ -1,0 +1,34 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  .indents();
+  padding-top: 11px;
+  padding-bottom: 15px;
+  border-bottom: @border;
+}
+
+.page-header__logo {
+  width: 191px;
+}
+
+.page-header__logo-image {
+  width: 191px;
+  height: 39px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
