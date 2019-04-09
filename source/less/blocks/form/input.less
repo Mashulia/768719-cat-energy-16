@@ -1,0 +1,41 @@
+.input {
+  flex-grow: 1;
+  padding: 15px;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus,
+  &:active {
+    border-color: #444444;
+  }
+
+  &:focus ~ .input__icon path,
+  &:active ~ .input__icon path {
+    fill: @main-color;
+  }
+
+  &::placeholder {
+    .text-typeface-1();
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+}
+
+.input__icon {
+  position: absolute;
+  top: 17px;
+  right: 14px;
+
+  &--mail {
+    width: 18px;
+    height: 14px;
+  }
+
+  &--tel {
+    width: 21px;
+    height: 21px;
+  }
+}
