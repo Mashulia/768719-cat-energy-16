@@ -26,7 +26,8 @@
 
 @media (min-width: @tablet-width) {
   .page-header {
-  .indents-tablet();
+    .indents-tablet();
+    padding-top: 24px;
   }
 
   .page-header__wrapper {
@@ -47,5 +48,21 @@
     &:active {
       opacity: 0.6;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    .indents-desktop();
+    padding-top: 54px;
+  }
+
+  .page-header__wrapper {
+    width: 202px;
+  }
+
+  .page-header__logo-image {
+    width: 202px;
+    height: 59px;
   }
 }
