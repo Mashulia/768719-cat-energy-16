@@ -85,6 +85,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .columns {
+    .indents-tablet();
+  }
+
   .columns__item {
     padding: 81px 55px 62px;
 
@@ -104,21 +108,21 @@
 
     &::before {
       top: -5px;
-      left: 450px;
+      left: 390px;
       width: 200px;
       height: 200px;
     }
 
     &--slimming::after {
       top: -18px;
-      left: 482px;
+      left: 420px;
       width: 140px;
       height: 194px;
     }
 
     &--gain-weight::after {
       top: 50px;
-      left: 412px;
+      left: 355px;
       width: 268px;
       height: 112px;
     }
@@ -130,7 +134,7 @@
     line-height: 24px;
 
     &--slimming {
-      width: 371px;
+      width: 372px;
     }
 
     &--gain-weight {
@@ -169,6 +173,7 @@
   .columns {
     display: flex;
     justify-content: space-between;
+    .indents-desktop();
   }
 
   .columns__item {
