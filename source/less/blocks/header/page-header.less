@@ -22,13 +22,30 @@
 .page-header__logo-image {
   width: 191px;
   height: 39px;
+}
 
-  &:hover,
-  &:focus {
-    opacity: 0.8;
+@media (min-width: @tablet-width) {
+  .page-header {
+  .indents-tablet();
   }
 
-  &:active {
-    opacity: 0.6;
+  .page-header__wrapper {
+    padding: 0;
+    width: 173px;
+    border: none;
+  }
+
+  .page-header__logo-image {
+    width: 173px;
+    height: 58px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 }

@@ -12,13 +12,35 @@
   padding-bottom: 24px;
   color: inherit;
   border-bottom: @border;
+}
 
-  &:hover,
-  &:focus {
-    opacity: 0.6;
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
   }
 
-  &:active {
-    opacity: 0.3;
+  .site-list__item {
+    margin-right: 35px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  .site-list__link {
+    border-bottom: none;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
