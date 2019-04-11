@@ -35,3 +35,45 @@
   background-color: @grey-color;
   text-align: center;
 }
+
+@media (min-width: @tablet-width) {
+  .numbers__item {
+    margin-bottom: 0;
+    padding: 13px 20px;
+    width: 162px;
+    height: 75px;
+
+    &:first-child {
+      margin-right: 43px;
+    }
+  }
+
+  .numbers__info {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .numbers__data {
+    top: 65px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+
+    &--weight {
+      left: 20px;
+      width: 115px;
+    }
+
+    &--time {
+      left: 10px;
+      width: 140px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width){
+  .numbers {
+    margin-bottom: 60px;
+  }
+}

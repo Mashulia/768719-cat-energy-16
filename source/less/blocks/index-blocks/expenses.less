@@ -3,3 +3,32 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+@media (min-width: @tablet-width) {
+  .expenses {
+    margin-bottom: 0;
+    margin-left: auto;
+    width: 190px;
+    font-size: 20px;
+    text-align: right;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .expenses {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 325px;
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  .expenses__pay--food {
+    width: 177px;
+  }
+
+  .expenses__pay--rubles {
+    width: 90px;
+  }
+}
