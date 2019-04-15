@@ -21,12 +21,57 @@
     content: "";
     position: absolute;
     top: 65px;
-    left: 113px;
-    margin-left: -56px;
+    left: 50%;
+    margin-left: -29px;
     width: 56px;
     height: 61px;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-image: url("../../img/icon-gift.svg");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .offer {
+    margin-top: 70px;
+    margin-bottom: 80px;
+    min-height: 200px;
+    background-size: contain;
+    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+  }
+
+  .offer__text {
+    margin: 0;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-left: 424px;
+    width: 170px;
+    text-align: left;
+
+    &::before {
+      top: 65px;
+      left: -320px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .offer {
+    margin: 0;
+    width: 245px;
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+  }
+
+  .offer__text {
+    padding-top: 185px;
+    padding-bottom: 45px;
+    margin: 0 auto;
+    width: 170px;
+    text-align: center;
+
+    &::before {
+      left: 50%;
+      margin-left: -29px;
+    }
   }
 }

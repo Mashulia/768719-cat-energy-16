@@ -71,10 +71,6 @@
   color: inherit;
   text-transform: uppercase;
 
-  &:active {
-    opacity: 0.3;
-  }
-
   &::after {
     content: "";
     position: absolute;
@@ -86,16 +82,132 @@
     background-repeat: no-repeat;
     background-position: 0 0;
   }
+}
 
-  &:hover::after,
-  &:focus::after {
-    right: -44px;
-    width: 33px;
-    height: 11px;
-    background-image: url("../../img/icon-right-arrow-verylong.svg");
+@media (min-width: @tablet-width) {
+  .columns {
+    .indents-tablet();
   }
 
-  &:active::after {
-    opacity: 0.3;
+  .columns__item {
+    padding: 81px 55px 62px;
+
+    &--slimming {
+      margin-bottom: 30px;
+    }
+
+    &--gain-weight {
+      margin-bottom: 51px;
+    }
+  }
+
+  .columns__title {
+    padding-left: 0;
+    margin-bottom: 26px;
+    font-size: 36px;
+
+    &::before {
+      top: -5px;
+      left: 390px;
+      width: 200px;
+      height: 200px;
+    }
+
+    &--slimming::after {
+      top: -18px;
+      left: 420px;
+      width: 140px;
+      height: 194px;
+    }
+
+    &--gain-weight::after {
+      top: 50px;
+      left: 355px;
+      width: 268px;
+      height: 112px;
+    }
+  }
+
+  .columns__description {
+    margin-bottom: 61px;
+    font-size: 16px;
+    line-height: 24px;
+
+    &--slimming {
+      width: 372px;
+    }
+
+    &--gain-weight {
+      width: 340px;
+    }
+  }
+
+  .columns__link {
+    padding-top: 0;
+    font-size: 20px;
+    line-height: 20px;
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &::after {
+      top: 8px;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      right: -44px;
+      width: 33px;
+      height: 11px;
+      background-image: url("../../img/icon-right-arrow-verylong.svg");
+    }
+
+    &:active::after {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .columns {
+    display: flex;
+    justify-content: space-between;
+    .indents-desktop();
+  }
+
+  .columns__item {
+    width: 570px;
+    padding: 81px 56px 62px 52px;
+  }
+
+  .columns__title {
+    padding-left: 165px;
+    margin-bottom: 80px;
+
+    &::before {
+      top: -15px;
+      left: 22px;
+      width: 100px;
+      height: 100px;
+    }
+
+    &--slimming::after {
+      top: -20px;
+      left: 40px;
+      width: 70px;
+      height: 97px;
+    }
+
+    &--gain-weight::after {
+      top: 0;
+      left: 0;
+      width: 134px;
+      height: 56px;
+    }
+  }
+
+  .columns__description {
+    width: 100%;
   }
 }

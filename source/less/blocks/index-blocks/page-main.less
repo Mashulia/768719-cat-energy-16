@@ -17,13 +17,15 @@
 }
 
 .page-main__title {
+  .reset-indents();
   font-size: 36px;
   line-height: 36px;
-  font-weight: 400px;
+  font-weight: 400;
   margin-bottom: 19px;
 }
 
 .page-main__lead {
+  .reset-indents();
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
@@ -39,4 +41,86 @@
 
 .page-main__button {
   margin-bottom: 22px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__header {
+    z-index: 2;
+    padding-top: 70px;
+    padding-left: 90px;
+    margin-bottom: 45px;
+    color: #111111;
+    background: none;
+    text-align: left;
+  }
+
+  .page-main__title {
+    width: 430px;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 33px;
+  }
+
+  .page-main__lead {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .page-main__wrapper-image {
+    position: relative;
+    top: 280px;
+  }
+
+  .page-main__image {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 709px;
+    height: 609px;
+  }
+
+  .page-main__button {
+    position: relative;
+    z-index: 3;
+    margin-left: 90px;
+    margin-bottom: 530px;
+    width: 245px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__header {
+    padding-top: 110px;
+    padding-left: 80px;
+    width: 430px;
+    margin-bottom: 50px;
+  }
+
+  .page-main__wrapper-image {
+    top: 0;
+  }
+
+  .page-main__background-block {
+    position: absolute;
+    top: -108px;
+    left: 0;
+    margin-left: 610px;
+    width: 100%;
+    height: 695px;
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+  }
+
+  .page-main__image {
+    width: 552px;
+    height: 499px;
+  }
+
+  .page-main__button {
+    margin-left: 80px;
+    margin-bottom: 270px;
+    width: 245px;
+  }
 }

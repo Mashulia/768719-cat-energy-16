@@ -22,13 +22,47 @@
 .page-header__logo-image {
   width: 191px;
   height: 39px;
+}
 
-  &:hover,
-  &:focus {
-    opacity: 0.8;
+@media (min-width: @tablet-width) {
+  .page-header {
+    .indents-tablet();
+    padding-top: 24px;
   }
 
-  &:active {
-    opacity: 0.6;
+  .page-header__wrapper {
+    padding: 0;
+    width: 173px;
+    border: none;
+  }
+
+  .page-header__logo-image {
+    width: 173px;
+    height: 58px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    .indents-desktop();
+    padding-top: 54px;
+  }
+
+  .page-header__wrapper {
+    width: 202px;
+  }
+
+  .page-header__logo-image {
+    width: 202px;
+    height: 59px;
   }
 }

@@ -6,3 +6,24 @@
 .main-nav__toggle {
   width: 25px;
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 440px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    position: relative;
+    z-index: 5;
+    width: 480px;
+  }
+}
