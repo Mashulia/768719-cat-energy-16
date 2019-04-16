@@ -32,28 +32,25 @@
 }
 
 @media (min-width: @tablet-width) {
-  .subtitle {
-
-    &--addiional {
+  .subtitle--addiional {
       margin-left: 70px;
     }
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: -70px;
-      flex-grow: 1;
-      flex-shrink: 0;
-      width: 40px;
-      height: 2px;
-      background-color: @main-color;
-    }
+  .subtitle::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -70px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 40px;
+    height: 2px;
+    background-color: @main-color;
+  }
 
-    &::after {
-      width: 768px;
-      margin-left: 38px;
-    }
+  .subtitle::after {
+    width: 768px;
+    margin-left: 38px;
   }
 }
 
