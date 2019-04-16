@@ -66,10 +66,7 @@
           </ul>
         </fieldset>
         <fieldset class="form__item">
-          <div class="form__subtitle">
-            <legend class="form__title subtitle">Контактные данные (владельца кота)</legend>
-            <span class="subtitle__line"></span>
-          </div>
+          <legend class="form__title subtitle">Контактные данные (владельца кота)</legend>
           <ul class="form__list contacts-list">
             <li class="contacts-list__item">
               <label class="contacts-list__label label" for="mail">E-mail:*</label>
@@ -84,18 +81,12 @@
           </ul>
         </fieldset>
         <fieldset class="form__item">
-          <div class="form__subtitle">
-            <legend class="form__title subtitle">Комментарий</legend>
-            <span class="subtitle__line"></span>
-          </div>
+          <legend class="form__title subtitle">Комментарий</legend>
           <label class="visually-hidden" for="text">Расскажите о своем коте</label>
           <textarea class="form__text input" id="text" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="form__item">
-          <div class="form__subtitle">
-            <legend class="form__title subtitle">Дополнительно</legend>
-            <span class="subtitle__line"></span>
-          </div>
+          <legend class="form__title subtitle">Дополнительно</legend>
           <ul class="form__list additional-list">
             <li class="additional-list__item">
               <input class="visually-hidden form__input form__input--checkbox" type="checkbox" id="sweetener" name="sweetener" checked>
@@ -115,8 +106,10 @@
             </li>
           </ul>
         </fieldset>
-        <button class="form__button button" type="button">Отправить заявку</button>
-        <span class="form__note">* — Обязательные поля</span>
+        <div class="form__wrapper-button">
+          <button class="form__button button" type="button">Отправить заявку</button>
+          <span class="form__note">* — Обязательные поля</span>
+        </div>
       </form>
       <div class="page-main__bottom-wrapper bottom-wrapper bottom-wrapper--inner">
         <section class="bottom-wrapper__contacts contacts">
