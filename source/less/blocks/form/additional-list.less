@@ -9,3 +9,37 @@
   margin-bottom: 26px;
   padding-left: 46px;
 }
+
+@media (min-width: @tablet-width) {
+  .additional-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .additional-list__item {
+    width: 285px;
+
+    &--nth-child(2n + 1) {
+      margin-right: 60px;
+    }
+  }
+
+  .additional-list__label {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-list {
+    margin-left: 40px;
+  }
+
+  .additional-list__item {
+    width: 245px;
+    margin-right: 80px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
