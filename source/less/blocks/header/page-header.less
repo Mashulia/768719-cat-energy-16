@@ -1,22 +1,17 @@
 .page-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  position: relative;
 }
 
 .page-header__wrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 320px;
-  .indents();
   padding-top: 11px;
   padding-bottom: 15px;
   border-bottom: @border;
 }
 
 .page-header__logo {
-  width: 191px;
+  display: block;
+  .indents();
+  margin-right: auto;
 }
 
 .page-header__logo-image {
