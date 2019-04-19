@@ -1,29 +1,31 @@
+.advantages {
+  .indents();
+  margin-bottom: 17px;
+}
+
 .advantages__title {
-  margin-bottom: 35px;
+  margin-bottom: 29px;
 }
 
 .advantages__list {
   .reset-list();
-  .indents();
+  padding-left: 80px;
 }
 
 .advantages__description {
   .reset-indents();
   .text-typeface-1();
-  padding-left: 80px;
-  padding-right: 24px;
   font-family: @font-text;
 }
 
 .advantages__item {
   position: relative;
-  margin-bottom: 32px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: -20px;
+    top: -2px;
+    left: -80px;
     width: 60px;
     height: 60px;
     background-color: @main-color;
@@ -32,8 +34,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 13px;
-    left: -4px;
+    top: 12px;
+    left: -65px;
     background-repeat: no-repeat;
     background-position: -10px -10px;
   }

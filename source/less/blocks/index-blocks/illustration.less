@@ -1,29 +1,35 @@
 .illustration {
-  .indents();
   padding-bottom: 39px;
+  padding-top: 18px;
   background-color: @grey-color;
 }
 
 .illustration__title {
-  margin-bottom: 33px;
+  padding-left: 20px;
+  margin-bottom: 22px;
+}
+
+.illustration__column--left {
+  .indents();
 }
 
 .illustration__description {
   .reset-indents();
   .text-typeface-1();
   padding-right: 14px;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
   font-family: @font-text;
 }
 
 .illustration__list {
   display: flex;
   .reset-list();
-  margin-bottom: 33px;
   overflow: hidden;
 }
 
 .illustration__item {
+  position: relative;
+  left: 5px;
   flex-shrink: 0;
   width: 311px;
 }
