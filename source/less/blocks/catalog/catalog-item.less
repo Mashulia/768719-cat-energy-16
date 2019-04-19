@@ -1,7 +1,7 @@
 .catalog-item__title {
   .reset-indents();
-  margin-bottom: 18px;
-  width: 72px;
+  margin-bottom: 11px;
+  width: 73px;
   .main-typeface();
   text-transform: uppercase;
 
@@ -9,7 +9,7 @@
     position: relative;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 11px;
+    margin-bottom: 9px;
     width: 100%;
 
     &::before {
@@ -32,6 +32,8 @@
 }
 
 .catalog-item__image {
+  position: relative;
+  margin-top: -20px;
   width: 140px;
   height: 144px;
 }
@@ -41,10 +43,12 @@
 }
 
 .catalog-item__button {
-  padding-top: 11px;
+  padding-top: 8px;
   padding-bottom: 12px;
   width: 100%;
   flex-grow: 1;
+  .main-typeface();
+  color: #ffffff;
 
   &--more-products {
     color: #444444;
