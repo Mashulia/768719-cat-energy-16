@@ -1,32 +1,81 @@
 .form__item {
-  padding-top: 31px;
+  padding: 0;
   border: none;
 
-  &--programm,
   &--common {
-    border-bottom: solid 1px #ededed;
+    padding-top: 36px;
+  }
+
+  &--programm {
+    padding-top: 25px;
+    margin-bottom: 28px;
+    border: 1px solid #ededed;
+  }
+
+  &--contacts {
+    margin-bottom: 17px;
+  }
+
+  &--comment {
+    margin-bottom: 26px;
+  }
+
+  &--additional {
+    margin-bottom: 10px;
   }
 }
 
 .form__list {
+  .indents();
   .reset-list();
 }
 
-.form__title {
-  width: 181px;
-}
-
-.form__subtitle {
+.form__item-wrapper-subtitle {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  padding-left: 20px;
+  width: 100%;
+}
+
+.form__title {
+  width: 62%;
+  margin-bottom: 31px;
+
+  &::after {
+    left: 66%;
+    height: 2px;
+  }
+
+  &--comment {
+    margin-bottom: 33px;
+
+    &::after {
+      left: 70%;
+      width: 85%;
+    }
+  }
+
+  &--additional {
+    margin-bottom: 40px;
+
+    &::after {
+      left: 82%;
+      width: 74%;
+    }
+  }
+
+  &--contacts::after {
+    top: 28%;
+    left: 103%;
+    width: 52%;
+  }
 }
 
 .form__input--radio + .programm-list__label::before {
   content: "";
   position: absolute;
-  top: -6px;
-  left: -20px;
+  top: -7px;
+  left: -3px;
   width: 30px;
   height: 30px;
   border: 1px solid #cdcdcd;
@@ -37,16 +86,11 @@
   content: "";
   position: absolute;
   top: 3px;
-  left: -11px;
+  left: 6px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background-color: @main-color;
-}
-
-.form__text {
-  width: 100%;
-  min-height: 150px;
 }
 
 .form__input--checkbox + .additional-list__label::before {
@@ -54,18 +98,18 @@
   display: block;
   position: absolute;
   top: -5px;
-  left: 0;
+  left: -2px;
   width: 30px;
   height: 30px;
-  border: 2px solid #cdcdcd;
+  border: 1px solid #cdcdcd;
 }
 
 .form__input--checkbox:checked + .additional-list__label::after {
   content: "";
   display: block;
   position: absolute;
-  top: 0;
-  left: 5px;
+  top: 1px;
+  left: 2px;
   width: 22px;
   height: 17px;
   background-image: url("../../img/icon-tick.svg");
@@ -84,16 +128,23 @@
   opacity: 0.3;
 }
 
+.form__wrapper-text,
+.form__wrapper-button {
+  .indents();
+}
+
 .form__button {
   width: 100%;
   padding-top: 11px;
   padding-bottom: 11px;
   margin-bottom: 23px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .form__note {
   display: block;
-  margin-bottom: 23px;
+  margin-bottom: 30px;
   font-family: @font-text;
   .text-typeface-1();
   line-height: 16px;

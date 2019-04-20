@@ -13,7 +13,7 @@
           <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Кэт энерджи">
         </a>
       </div>
-      <nav class="main-nav main-nav--opened">
+      <nav class="main-nav main-nav--opened ">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -70,36 +70,35 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__item">
-          <div class="form__subtitle">
-            <legend class="form__title subtitle">Контактные данные (владельца кота)</legend>
-            <span class="subtitle__line"></span>
+        <fieldset class="form__item form__item--contacts">
+          <div class="form__item-wrapper-subtitle">
+            <legend class="form__title subtitle form__title--contacts">Контактные данные (владельца кота)</legend>
           </div>
           <ul class="form__list contacts-list">
             <li class="contacts-list__item">
               <label class="contacts-list__label label" for="mail">E-mail:*</label>
-              <input class="contacts-list__input contacts-list__input--mail input" id="mail" type="email" name="mail" placeholder="kuklachev@gmail.com">
+              <input class="input input--mail" id="mail" type="email" name="mail" placeholder="kuklachev@gmail.com">
               <svg class="input__icon input__icon--mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 13" width="18" height="14"><path d="M15.6 11.6H1.4V5.8H0V13h17V5.8h-1.4v5.8zM0 0v2.3l8.5 7.1L17 2.3V0H0zm15.6 1.6L8.5 7.5 1.4 1.6v-.2h14.2v.2z"/></svg>
             </li>
             <li class="contacts-list__item">
               <label class="contacts-list__label label" for="tel">Телефон:*</label>
-              <input class="contacts-list__input contacts-list__input--tel input" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90">
+              <input class="input input--tel" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90">
               <svg class="input__icon input__icon--tel" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="21" height="21"><path d="M17.9 9.4H9.4v1.2h8.5l-2.1 2.1.9.9 3.1-3.1c.2-.2.2-.6 0-.9l-3.1-3.1-.9.9 2.1 2zM8.1 19.4v-6.2c0-.3-.3-.6-.6-.6H3.1c0 .7.6 1.2 1.2 1.2h2.5v5H3.1c-1 .1-1.8-.7-1.9-1.7v-14c0-1 .8-1.8 1.7-1.8H6.8v5H4.4c-.7 0-1.2.6-1.2 1.2h4.4c.3 0 .6-.3.6-.6V.6C8.1.3 7.8 0 7.5 0H3.1C1.5-.1.1 1.2 0 2.9V16.8c-.1 1.7 1.2 3.1 2.9 3.1H7.5c.3.1.6-.2.6-.5z"/></svg>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__item">
-          <div class="form__subtitle">
-            <legend class="form__title subtitle">Комментарий</legend>
-            <span class="subtitle__line"></span>
+        <fieldset class="form__item form__item--comment">
+          <div class="form__item-wrapper-subtitle">
+            <legend class="form__title subtitle form__title--comment">Комментарий</legend>
           </div>
           <label class="visually-hidden" for="text">Расскажите о своем коте</label>
-          <textarea class="form__text input" id="text" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <div class="form__wrapper-text">
+            <textarea class="input input--text" id="text" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
         </fieldset>
-        <fieldset class="form__item">
-          <div class="form__subtitle">
-            <legend class="form__title subtitle">Дополнительно</legend>
-            <span class="subtitle__line"></span>
+        <fieldset class="form__item form__item--additional">
+          <div class="form__item-wrapper-subtitle">
+            <legend class="form__title subtitle form__title--additional">Дополнительно</legend>
           </div>
           <ul class="form__list additional-list">
             <li class="additional-list__item">
@@ -120,7 +119,9 @@
             </li>
           </ul>
         </fieldset>
-        <button class="form__button button" type="button">Отправить заявку</button>
+        <div class="form__wrapper-button">
+          <button class="form__button button" type="button">Отправить заявку</button>
+        </div>
         <span class="form__note">* — Обязательные поля</span>
       </form>
       <div class="page-main__bottom-wrapper bottom-wrapper bottom-wrapper--inner">
