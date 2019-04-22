@@ -52,11 +52,21 @@
 @media (min-width: @desktop-width) {
   .contacts {
     position: absolute;
-    top: 95px;
-    left: 110px;
+    z-index: 5;
+    top: 94px;
+    left: 40px;
     width: 570px;
     height: 201px;
-    padding: 69px 90px 59px 76px;
+    padding: 63px 90px 59px 76px;
     background-color: #ffffff;
+  }
+
+  .contacts__title {
+    width: 170px;
+  }
+
+  .contacts__address {
+    width: 157px;
+    text-align: left;
   }
 }

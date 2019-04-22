@@ -92,8 +92,9 @@
 
 @media (min-width: @desktop-width) {
   .page-main__header {
-    padding-top: 110px;
-    padding-left: 80px;
+    position: relative;
+    padding-top: 108px;
+    padding-left: 120px;
     width: 430px;
     margin-bottom: 50px;
   }
@@ -104,8 +105,8 @@
 
   .page-main__background-block {
     position: absolute;
-    top: -108px;
-    left: 0;
+    top: -117px;
+    left: 3%;
     margin-left: 610px;
     width: 100%;
     height: 695px;
@@ -115,14 +116,21 @@
     background-size: contain;
   }
 
+  .page-main__wrapper-image {
+    position: absolute;
+    top: 0;
+    left: 37.6%;
+  }
+
   .page-main__image {
+    top: 0;
     width: 552px;
     height: 499px;
   }
 
   .page-main__button {
-    margin-left: 80px;
+    position: static;
+    margin-left: 120px;
     margin-bottom: 270px;
-    width: 245px;
   }
 }
