@@ -20,15 +20,24 @@
 
 @media (min-width: @tablet-width) {
   .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     .indents-tablet();
     padding-top: 24px;
   }
 
   .page-header__wrapper {
     padding: 0;
-    width: 173px;
+    width: 27%;
     border: none;
   }
+
+
+    .page-header__logo {
+      padding: 0;
+    }
+
 
   .page-header__logo-image {
     width: 173px;

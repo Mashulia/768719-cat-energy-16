@@ -9,3 +9,27 @@
 .contacts-list__label {
   margin-right: 9px;
 }
+
+@media (min-width: @tablet-width) {
+  .contacts-list {
+    padding-left: 70px;
+    padding-right: 67px;
+  }
+
+  .contacts-list__item {
+    padding: 0;
+
+    &:first-child {
+      margin-bottom: 19px;
+    }
+
+    &:last-child {
+      margin-left: -4px;
+      margin-bottom: 0;
+    }
+  }
+
+  .contacts-list__label {
+    margin-right: 18px;
+  }
+}
