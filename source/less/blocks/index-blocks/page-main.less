@@ -5,13 +5,13 @@
 .page-main__header {
   position: relative;
   min-height: 305px;
-  padding-top: 29px;
+  padding-top: 27px;
   margin-bottom: 135px;
   color: #ffffff;
   background-color: @main-color;
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center 0;
   background-size: contain;
   text-align: center;
 }
@@ -21,7 +21,7 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  margin-bottom: 19px;
+  margin-bottom: 23px;
 }
 
 .page-main__lead {
@@ -34,21 +34,23 @@
 .page-main__image {
   position: absolute;
   top: 165px;
-  left: 20px;
+  left: 50%;
+  margin-left: -140px;
   width: 280px;
   height: 270px;
 }
 
 .page-main__button {
-  margin-bottom: 22px;
+  margin: 20px;
+  margin-top: 0;
 }
 
 @media (min-width: @tablet-width) {
   .page-main__header {
-    z-index: 2;
-    padding-top: 70px;
-    padding-left: 90px;
-    margin-bottom: 45px;
+    padding-top: 55px;
+    padding-left: 15%;
+    margin-bottom: 20px;
+    min-height: 0;
     color: #111111;
     background: none;
     text-align: left;
@@ -58,7 +60,7 @@
     width: 430px;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 33px;
+    margin-bottom: 41px;
   }
 
   .page-main__lead {
@@ -67,43 +69,46 @@
   }
 
   .page-main__wrapper-image {
-    position: relative;
-    top: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 609px;
   }
 
   .page-main__image {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: static;
     width: 709px;
     height: 609px;
   }
 
   .page-main__button {
-    position: relative;
+    position: absolute;
     z-index: 3;
-    margin-left: 90px;
-    margin-bottom: 530px;
+    top: 284px;
+    left: 13%;
     width: 245px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-main__header {
-    padding-top: 110px;
-    padding-left: 80px;
+    position: relative;
+    padding-top: 108px;
+    padding-left: 120px;
     width: 430px;
     margin-bottom: 50px;
   }
 
   .page-main__wrapper-image {
+    position: absolute;
     top: 0;
+    left: 37.6%;
   }
 
   .page-main__background-block {
     position: absolute;
-    top: -108px;
-    left: 0;
+    top: -117px;
+    left: 3%;
     margin-left: 610px;
     width: 100%;
     height: 695px;
@@ -114,13 +119,14 @@
   }
 
   .page-main__image {
+    top: 0;
     width: 552px;
     height: 499px;
   }
 
   .page-main__button {
-    margin-left: 80px;
+    position: static;
+    margin-left: 120px;
     margin-bottom: 270px;
-    width: 245px;
   }
 }

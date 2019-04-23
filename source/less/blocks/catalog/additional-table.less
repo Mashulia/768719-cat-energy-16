@@ -1,8 +1,11 @@
+.additional-table {
+  width: 100%;
+}
+
 .additional-table__row {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 14px;
+  padding-top: 10px;
   padding-bottom: 17px;
   border-bottom: @border;
 }
@@ -16,7 +19,7 @@
   }
 
   &--head {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     line-height: 16px;
     color: #222222;
     text-transform: uppercase;
@@ -24,17 +27,14 @@
 
   &--quantity {
     padding-bottom: 17px;
-    width: 140px;
+    width: 50%;
     font-family: @font-text;
     .text-typeface-1();
     line-height: 14px;
   }
 
   &--price {
-    position: absolute;
-    left: 140px;
-    top: 44px;
-    width: 140px;
+    width: 50%;
     font-family: @font-text;
     .text-typeface-1();
     line-height: 14px;
@@ -43,17 +43,20 @@
 }
 
 .additional-table__button {
-  padding-top: 11px;
+  padding-top: 6px;
   padding-bottom: 12px;
+  .main-typeface();
+  color: #ffffff;
 }
 
 @media (min-width: @tablet-width) {
   .additional-table {
     width: 100%;
+    border-collapse: collapse;
   }
 
   .additional-table__row {
-    padding: 30px 35px;
+    padding: 25px 35px;
     border-bottom: none;
     border: 1px solid rgba(205, 205, 205, 0.5);
   }
@@ -65,48 +68,66 @@
     &--head {
       padding-bottom: 25px;
       flex-shrink: 1;
-      width: 347px;
+      width: 49%;
       text-align: left;
+      font-size: 20px;
+      line-height: 20px;
     }
 
     &--quantity {
-      width: 191px;
+      width: 36%;
+      padding-top: 5px;
+      font-size: 16px;
+      line-height: 20px;
     }
 
     &--price {
       position: static;
-      width: 94px;
+      width: 15%;
+      padding-top: 5px;
+      font-size: 16px;
+      line-height: 20px;
     }
+  }
+
+  .additional-table__button {
+    padding-top: 9px;
+    height: 40px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .additional-table {
     width: 901px;
+    min-height: 290px;
   }
 
   .additional-table__row {
     align-items: baseline;
-    padding: 15px 0;
+    padding: 15px 0 13px;
     border-left: none;
     border-right: none;
   }
 
-  .additional-table__cell--head {
-    width: 245px;
-    margin-right: 80px;
-    padding-bottom: 0;
-  }
+  .additional-table__cell {
+    vertical-align: middle;
 
-  .additional-table__cell--quantity {
-    text-align: left;
-    width: 245px;
-    padding-bottom: 0;
-  }
+    &--head {
+      width: 245px;
+      margin-right: 80px;
+      padding-bottom: 0;
+    }
 
-  .additional-table__cell--price {
-    width: 40px;
-    margin-right: 40px;
+    &--quantity {
+      text-align: left;
+      width: 245px;
+      padding-bottom: 0;
+    }
+
+    &--price {
+      text-align: left;
+      width: 80px;
+    }
   }
 
   .additional-table__cell--link {

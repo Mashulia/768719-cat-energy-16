@@ -4,7 +4,7 @@
   align-items: center;
   flex-wrap: wrap;
   .reset-list();
-  width: 150px;
+  width: 126px;
   margin: 0 auto;
   text-align: center;
 }
@@ -25,12 +25,33 @@
   }
 
   &--instagram {
-    width: 17px;
-    height: 17px;
+    width: 16px;
+    height: 16px;
   }
 
   &--facebook {
     width: 10px;
     height: 19px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social-list {
+    width: 125px;
+  }
+
+  .social-list__icon--vkontakte {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social-list__icon--instagram {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social-list__icon--facebook {
+    width: 14px;
+    height: 28px;
   }
 }
