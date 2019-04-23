@@ -1,4 +1,8 @@
 .page-footer {
+  background-color: @grey-color;
+}
+
+.page-footer__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,11 +39,11 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-footer {
+  .page-footer__container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 62px 30px 60px 30px;
+    padding: 50px 30px 60px 30px;
   }
 
   .page-footer__wrapper-logo {
@@ -58,7 +62,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-footer {
-    padding: 58px 40px;
+  .page-footer__container {
+    padding: 58px 40px 60px 40px;
   }
 }

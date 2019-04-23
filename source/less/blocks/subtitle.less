@@ -87,7 +87,6 @@
   }
 
   .subtitle__title {
-    width: 59%;
     font-size: 36px;
     line-height: 36px;
     text-align: center;
@@ -133,4 +132,23 @@
       width: calc(100% - 39%);
     }
   }
+}
+
+@media (min-width: @desktop-width) {
+  .subtitle {
+    margin-bottom: 80px;
+  }
+
+
+.subtitle__title--additional-goods {
+    width: 32.5%;
+  }
+
+.subtitle__line:first-child {
+    width: calc(100% - 94.3%);
+  }
+
+  .subtitle__line--additional-goods {
+      width: calc(100% - 23.5%);
+    }
 }

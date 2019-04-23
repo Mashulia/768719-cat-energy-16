@@ -99,31 +99,36 @@
 @media (min-width: @desktop-width) {
   .additional-table {
     width: 901px;
+    min-height: 290px;
   }
 
   .additional-table__row {
     align-items: baseline;
-    padding: 15px 0;
+    padding: 15px 0 13px;
     border-left: none;
     border-right: none;
   }
 
-  .additional-table__cell--head {
+  .additional-table__cell {
+    vertical-align: middle;
+
+    &--head {
     width: 245px;
     margin-right: 80px;
     padding-bottom: 0;
   }
 
-  .additional-table__cell--quantity {
+  &--quantity {
     text-align: left;
     width: 245px;
     padding-bottom: 0;
   }
 
-  .additional-table__cell--price {
-    width: 40px;
-    margin-right: 40px;
+  &--price {
+    text-align: left;
+    width: 80px;
   }
+}
 
   .additional-table__cell--link {
     width: 245px;
