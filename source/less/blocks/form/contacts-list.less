@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 9px;
-  .indents();
+  padding: 0 18px;
 }
 
 .contacts-list__label {
@@ -37,12 +37,17 @@
 @media (min-width: @desktop-width) {
   .contacts-list {
     display: flex;
+    padding: 0;
     margin-left: 40px;
-    margin-bottom: 65px;
+    margin-bottom: 0;
   }
 
   .contacts-list__item {
     width: 570px;
+
+    &:first-child{
+      margin-bottom: 0;
+    }
 
     &:nth-child(2n-1) {
       margin-right: 80px;

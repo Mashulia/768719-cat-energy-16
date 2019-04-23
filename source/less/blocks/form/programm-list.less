@@ -4,21 +4,25 @@
   padding-bottom: 0;
 }
 
+.programm-list__item {
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .programm-list__label {
   position: relative;
   display: block;
   margin-right: 0;
-  margin-bottom: 26px;
   padding-left: 44px;
 }
 
 @media (min-width: @tablet-width) {
   .programm-list {
-    margin-left: 40px;
-    margin-right: 35px;
-    padding-top: 33px;
-    padding-left: 12%;
-    border: 1px solid #ededed;
+    padding-top: 35px;
+    padding-left: 14%;
   }
 
   .programm-list__label {
@@ -27,8 +31,9 @@
   }
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .programm-list {
-    padding: 30px 50px;
+    .reset-list();
+    border: none;
   }
 }

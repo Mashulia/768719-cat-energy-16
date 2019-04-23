@@ -1,7 +1,8 @@
 .subtitle {
   display: flex;
   align-items: center;
-  margin-left: 20px;
+  width: 100%;
+  margin-left: 18px;
   margin-bottom: 33px;
 
   &--additional {
@@ -13,7 +14,7 @@
   }
 
   &--comment {
-    margin-bottom: 30px;
+    margin-bottom: 29px;
   }
 }
 
@@ -29,15 +30,16 @@
   }
 
   &--contacts {
-    width: 200px;
+    width: 66%;
   }
 
   &--comment {
-    width: 125px;
+    width: 52.6%;
+    margin-bottom: 5px;
   }
 
   &--additional {
-    width: 140px;
+    width: 64.6%;
   }
 }
 
@@ -46,25 +48,25 @@
   height: 2px;
   background-color: @main-color;
 
+  &:first-child {
+    display: none;
+  }
+
   &--additional-goods {
     width: calc(100% - 252px);
-
-    &:first-child {
-      display: none;
-    }
   }
 
   &--contacts {
-    width: calc(100% - 200px);
+    width: calc(100% - 66%);
     margin-top: -20px;
   }
 
   &--comment {
-    width: calc(100% - 125px);
+    width: calc(100% - 42.6%);
   }
 
   &--additional {
-    width: calc(100% - 140px);
+    width: calc(100% - 46.6%);
   }
 }
 
@@ -76,13 +78,16 @@
       margin-bottom: 80px;
     }
 
-    &--contacts,
-    &--comments {
+    &--contacts {
       margin-bottom: 76px;
     }
 
+    &--comment {
+      margin-bottom: 72px;
+    }
+
     &--additional {
-      margin-bottom: 67px;
+      margin-bottom: 65px;
     }
   }
 
@@ -136,19 +141,35 @@
 
 @media (min-width: @desktop-width) {
   .subtitle {
-    margin-bottom: 80px;
+    margin-bottom: 79px;
+
+    &--comment {
+      margin-bottom: 70px;
+    }
+
+    &--additional {
+      margin-bottom: 66px;
+    }
   }
 
 
-.subtitle__title--additional-goods {
+  .subtitle__title--additional-goods {
     width: 32.5%;
   }
 
-.subtitle__line:first-child {
-    width: calc(100% - 94.3%);
+  .subtitle__title--contacts {
+    width: 595px;
+  }
+
+  .subtitle__line:first-child {
+    width: calc(100% - 96%);
   }
 
   .subtitle__line--additional-goods {
-      width: calc(100% - 23.5%);
-    }
+    width: calc(100% - 23.5%);
+  }
+
+  .subtitle__line--contacts {
+    width: calc(100% - 595px);
+  }
 }

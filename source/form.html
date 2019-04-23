@@ -36,7 +36,7 @@
       <h1 class="page-selection__title main-title">Подбор программы</h1>
       <p class="page-selection__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="page-selection__form form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="form__wrapper-field">
+        <div class="form__wrapper-field container">
           <fieldset class="form__item form__item--common">
             <legend class="form__title visually-hidden">Общая информация о вашем коте</legend>
             <ul class="form__list common-list">
@@ -55,22 +55,23 @@
             </ul>
           </fieldset>
           <fieldset class="form__item  form__item--programm">
-          <legend class="form__title visually-hidden">Программа</legend>
-          <ul class="form__list programm-list">
-            <li class="programm-list__item">
-              <input class="visually-hidden form__input form__input--radio" id="slimming" type="radio" name="programm-type" checked>
-              <label class="programm-list__label label" for="slimming">Похудение</label>
-            </li>
-            <li class="programm-list__item">
-              <input class="visually-hidden form__input form__input--radio" id="weight-gain" type="radio" name="programm-type">
-              <label class="programm-list__label label" for="weight-gain">Набор массы</label>
-            </li>
-            <li class="programm-list__item">
-              <input class="visually-hidden form__input form__input--radio" id="advice" type="radio" name="programm-type">
-              <label class="programm-list__label label" for="advice">Не знаю (Нужен ваш совет)</label>
-            </li>
-          </ul>
-        </fieldset>
+            <legend class="form__title visually-hidden">Программа</legend>
+            <ul class="form__list programm-list">
+              <li class="programm-list__item">
+                <input class="visually-hidden form__input form__input--radio" id="slimming" type="radio" name="programm-type" checked>
+                <label class="programm-list__label label" for="slimming">Похудение</label>
+              </li>
+              <li class="programm-list__item">
+                <input class="visually-hidden form__input form__input--radio" id="weight-gain" type="radio" name="programm-type">
+                <label class="programm-list__label label" for="weight-gain">Набор массы</label>
+              </li>
+              <li class="programm-list__item">
+                <input class="visually-hidden form__input form__input--radio" id="advice" type="radio" name="programm-type">
+                <label class="programm-list__label label" for="advice">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="form__item form__item--contacts">
           <div class="form__item-wrapper-subtitle subtitle subtitle--contacts">
             <span class="subtitle__line subtitle__line--contacts"></span>
@@ -91,7 +92,7 @@
           </ul>
         </fieldset>
         <fieldset class="form__item form__item--comment">
-          <div class="form__item-wrapper-subtitle subtitle subtitle--comments">
+          <div class="form__item-wrapper-subtitle subtitle subtitle--comment">
             <span class="subtitle__line subtitle__line--comment"></span>
             <legend class="subtitle__title subtitle__title--comment">Комментарий</legend>
             <span class="subtitle__line subtitle__line--comment"></span>
