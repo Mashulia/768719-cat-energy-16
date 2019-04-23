@@ -36,24 +36,25 @@
       <h1 class="page-selection__title main-title">Подбор программы</h1>
       <p class="page-selection__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="page-selection__form form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form__item form__item--common">
-          <legend class="form__title visually-hidden">Общая информация о вашем коте</legend>
-          <ul class="form__list common-list">
-            <li class="common-list__item">
-              <label class="common-list__label label" for="name">Имя:*</label>
-              <input class="common-list__input input" id="name" type="text" name="name" placeholder="Барсик">
-            </li>
-            <li class="common-list__item">
-              <label class="common-list__label label" for="weight">Вес (кг):*</label>
-              <input class="common-list__input input" id="weight" type="number" name="weight" placeholder="7">
-            </li>
-            <li class="common-list__item">
-              <label class="common-list__label label" for="age">Возраст (лет):</label>
-              <input class="common-list__input input" id="age" type="number" name="age" placeholder="7">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form__item  form__item--programm">
+        <div class="form__wrapper-field">
+          <fieldset class="form__item form__item--common">
+            <legend class="form__title visually-hidden">Общая информация о вашем коте</legend>
+            <ul class="form__list common-list">
+              <li class="common-list__item">
+                <label class="common-list__label label" for="name">Имя:*</label>
+                <input class="common-list__input input" id="name" type="text" name="name" placeholder="Барсик">
+              </li>
+              <li class="common-list__item">
+                <label class="common-list__label label" for="weight">Вес (кг):*</label>
+                <input class="common-list__input input" id="weight" type="number" name="weight" placeholder="7">
+              </li>
+              <li class="common-list__item">
+                <label class="common-list__label label" for="age">Возраст (лет):</label>
+                <input class="common-list__input input" id="age" type="number" name="age" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__item  form__item--programm">
           <legend class="form__title visually-hidden">Программа</legend>
           <ul class="form__list programm-list">
             <li class="programm-list__item">

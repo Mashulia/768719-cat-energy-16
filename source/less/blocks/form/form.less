@@ -112,74 +112,101 @@
 
 @media (min-width: @tablet-width) {
   .form__item {
-    padding-top: 0;
+    padding: 0 67px 0 72px;
+    margin-bottom: 72px;
 
-    &--common,
-    &--programm {
-      .indents-tablet();
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &--programm,
+    &--common {
+      border-bottom: none;
     }
 
     &--programm {
-      margin-bottom: 77px;
-      border: none;
-    }
-
-    &--contacts,
-    &--comment {
-      margin-bottom: 63px;
+      margin-left: 70px;
+      margin-right: 70px;
+      padding: 0;
+      border: 1px solid rgba(205, 205, 205, 0.5);
     }
   }
 
   .form__input--radio + .programm-list__label::before {
-    top: -47%;
-    left: -11%;
     width: 40px;
     height: 40px;
   }
 
   .form__input--radio:checked + .programm-list__label::after {
-    top: 8%;
-    left: -9%;
+    top: 4px;
+    left: -9px;
     width: 18px;
     height: 18px;
   }
 
-  .form__wrapper-text {
-    .indents-tablet();
-  }
-
-  .form__input--checkbox + .additional-list__label::before {
-    top: -48%;
-    left: -5%;
-    width: 40px;
-    height: 40px;
-  }
-
-  .form__input--checkbox:checked + .additional-list__label::after {
-    top: 10%;
-    left: -1%;
-  }
-
   .form__wrapper-button {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 68%;
-    padding: 0;
     margin-left: 70px;
-    margin-right: 175px;
-    margin-bottom: 74px;
+    margin-bottom: 70px;
   }
 
   .form__button {
+    width: 285px;
+    margin-right: 60px;
     margin-bottom: 0;
-    width: 54.5%;
-    font-size: 20px;
   }
 
   .form__note {
+    width: 192px;
     margin-bottom: 0;
-    width: 34.4%;
     font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__wrapper-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+    padding-left: 40px;
+  }
+
+  .form__item {
+    padding: 0;
+
+    &--common,
+    &--programm {
+      margin: 0;
+      width: 570px;
+    }
+
+    &--common {
+      margin-right: 80px;
+    }
+  }
+
+  .form__title {
+    width: 100%;
+  }
+
+  .form__text {
+    display: block;
+    margin-left: 40px;
+  }
+
+  .form__button {
+    width: 570px;
+    margin-right: 80px;
+  }
+
+  .form__note {
+    width: 245px;
+  }
+
+  .form__wrapper-button {
+    margin-left: 40px;
+    margin-bottom: 80px;
   }
 }

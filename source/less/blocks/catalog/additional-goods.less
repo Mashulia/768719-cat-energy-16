@@ -13,27 +13,6 @@
     padding-top: 0;
   }
 
-  .additional-goods__title {
-    margin-left: 68px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: -68px;
-      flex-grow: 1;
-      flex-shrink: 0;
-      width: 40px;
-      height: 2px;
-      background-color: @main-color;
-    }
-
-    &::after {
-      width: 768px;
-      margin-left: 38px;
-    }
-  }
-
   .additional-goods__wrapper {
     margin-right: 30px;
     margin-left: 30px;
@@ -44,22 +23,6 @@
 @media (min-width: @desktop-width) {
   .additional-goods {
     margin-bottom: 85px;
-  }
-
-  .additional-goods__title {
-    margin-left: 40px;
-    margin-bottom: 80px;
-
-    &::before {
-      content: "";
-      left: -60px;
-      width: 40px;
-    }
-
-    &::after {
-      width: 1440px;
-      margin-left: 40px;
-    }
   }
 
   .additional-goods__wrapper {

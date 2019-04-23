@@ -33,3 +33,19 @@
     margin-right: 18px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .contacts-list {
+    display: flex;
+    margin-left: 40px;
+    margin-bottom: 65px;
+  }
+
+  .contacts-list__item {
+    width: 570px;
+
+    &:nth-child(2n-1) {
+      margin-right: 80px;
+    }
+  }
+}

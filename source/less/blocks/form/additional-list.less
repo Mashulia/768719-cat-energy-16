@@ -16,20 +16,32 @@
   .additional-list {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 80px;
-    margin-bottom: 3px;
   }
 
   .additional-list__item {
-    width: 45%;
-    margin-right: 7%;
+    width: 285px;
 
-    &:nth-child(2n) {
-      margin-right: 0;
+    &--nth-child(2n + 1) {
+      margin-right: 60px;
     }
   }
 
   .additional-list__label {
-    margin-bottom: 51px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-list {
+    margin-left: 40px;
+  }
+
+  .additional-list__item {
+    width: 245px;
+    margin-right: 80px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
