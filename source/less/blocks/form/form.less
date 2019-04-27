@@ -3,12 +3,12 @@
   border: none;
 
   &--common {
-    padding-top: 36px;
+    padding-top: 39px;
   }
 
   &--programm {
-    padding: 25px 0;
-    margin-bottom: 31px;
+    padding: 27px 0;
+    margin-bottom: 27px;
     border: 1px solid #ededed;
   }
 
@@ -44,7 +44,7 @@
 .form__input--radio:checked + .programm-list__label::after {
   content: "";
   position: absolute;
-  top: 2px;
+  top: 3px;
   left: 6px;
   width: 12px;
   height: 12px;
@@ -87,7 +87,10 @@
   opacity: 0.3;
 }
 
-.form__wrapper-text,
+.form__wrapper-text {
+  padding: 0 17px;
+}
+
 .form__wrapper-button {
   .indents();
 }
@@ -96,14 +99,14 @@
   width: 100%;
   padding-top: 11px;
   padding-bottom: 11px;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 20px;
 }
 
 .form__note {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   font-family: @font-text;
   .text-typeface-1();
   line-height: 16px;
