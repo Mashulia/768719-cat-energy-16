@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/picturefill.js"></script>
   </head>
   <body class="inner">
     <header class="page-header container">
@@ -43,7 +44,11 @@
         <ul class="catalog__list">
           <li class="catalog__item catalog-item">
             <a class="catalog-item__link catalog-item__link--small" href="#">
-              <img class="catalog-item__image catalog-item__image--small" src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Изображена ярко-оранжевая банка Cat Energy PRO весом 500г со вкусом курицы">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
+                <img class="catalog-item__image catalog-item__image--small" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Изображена ярко-оранжевая банка Cat Energy PRO весом 500г со вкусом курицы">
+              </picture>
             </a>
             <div class="catalog-item__info">
               <a href="#">
@@ -68,7 +73,11 @@
           </li>
           <li class="catalog__item catalog-item">
             <a class="catalog-item__link catalog-item__link--big" href="#">
-              <img class="catalog-item__image catalog-item__image--big" src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Изображена ярко-оранжевая банка Cat Energy PRO весом 1000г со вкусом курицы">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
+                <img class="catalog-item__image catalog-item__image--big" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Изображена ярко-оранжевая банка Cat Energy PRO весом 1000г со вкусом курицы">
+              </picture>
             </a>
             <div class="catalog-item__info">
               <a href="#">
@@ -93,7 +102,11 @@
           </li>
           <li class="catalog__item catalog-item">
             <a class="catalog-item__link catalog-item__link--small" href="#">
-              <img class="catalog-item__image catalog-item__image--small" src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Изображена ярко-зеленая банка Cat Energy PRO весом 500г со вкусом рыбы">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-tablet@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
+                <img class="catalog-item__image catalog-item__image--small" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" alt="Изображена ярко-зеленая банка Cat Energy PRO весом 500г со вкусом рыбы">
+              </picture>
             </a>
             <div class="catalog-item__info">
               <a href="#">
@@ -118,7 +131,11 @@
           </li>
           <li class="catalog__item catalog-item">
             <a class="catalog-item__link catalog-item__link--big" href="#">
-              <img class="catalog-item__image catalog-item__image--big" src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Изображена ярко-зеленая банка Cat Energy PRO весом 1000г со вкусом рыбы">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-tablet@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
+                <img class="catalog-item__image catalog-item__image--big" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" alt="Изображена ярко-зеленая банка Cat Energy PRO весом 1000г со вкусом рыбы">
+              </picture>
             </a>
             <div class="catalog-item__info">
               <a href="#">
@@ -143,7 +160,11 @@
           </li>
           <li class="catalog__item catalog-item">
             <a class="catalog-item__link catalog-item__link--small" href="#">
-              <img class="catalog-item__image catalog-item__image--small" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Изображена ярко-голубая банка Cat Energy Slim весом 500г со вкусом гречки">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
+                <img class="catalog-item__image catalog-item__image--small" src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Изображена ярко-голубая банка Cat Energy Slim весом 500г со вкусом гречки">
+              </picture>
             </a>
             <div class="catalog-item__info">
               <a href="#">
@@ -168,7 +189,11 @@
           </li>
           <li class="catalog__item catalog-item">
             <a class="catalog-item__link catalog-item__link--big" href="#">
-              <img class="catalog-item__image catalog-item__image--big" src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Изображена ярко-голубая банка Cat Energy Slim весом 1000г со вкусом гречки">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+                <img class="catalog-item__image catalog-item__image--big" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Изображена ярко-голубая банка Cat Energy Slim весом 1000г со вкусом гречки">
+              </picture>
             </a>
             <div class="catalog-item__info">
               <a href="#">
@@ -193,7 +218,11 @@
           </li>
           <li class="catalog__item catalog-item">
             <a class="catalog-item__link catalog-item__link--small" href="#">
-              <img class="catalog-item__image catalog-item__image--small" src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Изображена ярко-фиолетовая банка Cat Energy Slim весом 500г со вкусом риса">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-tablet@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
+                <img class="catalog-item__image catalog-item__image--small" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" alt="Изображена ярко-фиолетовая банка Cat Energy Slim весом 500г со вкусом риса">
+              </picture>
             </a>
             <div class="catalog-item__info">
               <a href="#">
@@ -278,7 +307,12 @@
           </address>
         </section>
         <div class="bottom-wrapper__map map">
-          <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Наш адрес: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6042731120367!2d30.322060345649795!3d59.93870842034729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1556036959876!5m2!1sru!2sru" width="600" height="450" allowfullscreen></iframe>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+            <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Наш адрес: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          </picture>
         </div>
       </div>
     </main>

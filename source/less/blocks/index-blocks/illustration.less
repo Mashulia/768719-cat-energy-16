@@ -136,26 +136,31 @@
   }
 
   .illustration__wrapper-background {
-    background-color: #f2f2f2;
+    position: relative;
+    z-index: 5;
+    background: linear-gradient(to right, #f2f2f2 0%,  #f2f2f2 73.5%, #eaeaea 73.5%, #eaeaea 100%);
   }
 
   .illustration__wrapper-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 63px;
-    padding-bottom: 68px;
   }
 
   .illustration__column {
     width: 610px;
+    position: relative;
+    z-index: 5;
 
     &--left {
       padding-left: 40px;
       margin-bottom: 0;
+      padding-top: 63px;
+      padding-bottom: 68px;
     }
 
     &--right {
+      padding-top: 63px;
       position: relative;
       padding-right: 40px;
     }
