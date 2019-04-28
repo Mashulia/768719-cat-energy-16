@@ -9,10 +9,6 @@
     margin-bottom: 40px;
   }
 
-  &--contacts {
-    margin-bottom: 30px;
-  }
-
   &--comment {
     margin-bottom: 29px;
   }
@@ -45,7 +41,7 @@
 
 .subtitle__line {
   flex-grow: 1;
-  height: 2px;
+  height: 3px;
   background-color: @main-color;
 
   &:first-child {
@@ -57,16 +53,16 @@
   }
 
   &--contacts {
-    width: calc(100% - 66%);
+    width: calc(100% - 61.7%);
     margin-top: -20px;
   }
 
   &--comment {
-    width: calc(100% - 42.6%);
+    width: calc(100% - 36.6%);
   }
 
   &--additional {
-    width: calc(100% - 46.6%);
+    width: calc(100% - 40.6%);
   }
 }
 
@@ -141,10 +137,10 @@
 
 @media (min-width: @desktop-width) {
   .subtitle {
-    margin-bottom: 79px;
+    margin-bottom: 74px;
 
     &--comment {
-      margin-bottom: 70px;
+      margin-bottom: 75px;
     }
 
     &--additional {
@@ -152,24 +148,39 @@
     }
   }
 
-
   .subtitle__title--additional-goods {
-    width: 32.5%;
+    width: 28.5%;
   }
 
   .subtitle__title--contacts {
-    width: 595px;
+    width: 40.9%;
+  }
+
+  .subtitle__title--comment {
+    width: 18%;
+  }
+
+  .subtitle__title--additional {
+    width: 19.8%;
   }
 
   .subtitle__line:first-child {
-    width: calc(100% - 96%);
+    width: calc(100% - 95%);
   }
 
   .subtitle__line--additional-goods {
-    width: calc(100% - 23.5%);
+    width: calc(100% - 33%);
   }
 
   .subtitle__line--contacts {
-    width: calc(100% - 595px);
+    width: calc(100% - 45.8%);
+  }
+
+  .subtitle__line--comment {
+    width: calc(100% - 20.9%);
+  }
+
+  .subtitle__line--additional {
+    width: calc(100% - 24.8%);
   }
 }

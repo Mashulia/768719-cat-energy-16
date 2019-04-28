@@ -1,5 +1,5 @@
 .illustration {
-  padding-bottom: 39px;
+  padding-bottom: 37px;
   padding-top: 18px;
   background-color: @grey-color;
 }
@@ -50,7 +50,7 @@
 @media (min-width: @tablet-width) {
   .illustration {
     padding-top: 0;
-    padding-bottom: 112px;
+    padding-bottom: 0;
     background-color: #ffffff;
   }
 
@@ -82,7 +82,7 @@
 
   .illustration__column--left {
     padding: 0;
-    margin-bottom: 80px;
+    margin-bottom: 75px;
   }
 
   .illustration__column--right {
@@ -92,32 +92,34 @@
   .illustration__list {
     display: flex;
     z-index: 3;
-    margin: 0 auto;
     margin-bottom: 114px;
-    width: 708px;
+    min-height: 517px;
+    width: 768px;
   }
 
   .illustration__item {
-    position: relative;
-    left: 0;
+    left: -50%;
     margin-left: 0;
-    width: 50%;
+    width: 100%;
+    height: 517px;
     overflow: hidden;
 
     &:last-child {
       display: block;
+      left: 50%;
     }
   }
 
   .illustration__image {
-    position: relative;
+    position: absolute;
     width: 690px;
     height: 517px;
-    left: 50%;
+    top: 11px;
+    left: 56%;
     margin-bottom: 0;
 
     &--after {
-      left: -50%;
+      left: -44%;
     }
   }
 }
@@ -128,28 +130,37 @@
   }
 
   .illustration__title {
-    padding-left: 40px;
+    .indents-desktop();
+    margin: 0 auto;
     margin-bottom: 75px;
   }
 
-  .illustration__wrapper {
+  .illustration__wrapper-background {
+    position: relative;
+    z-index: 5;
+    background: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 73.5%, #eaeaea 73.5%, #eaeaea 100%);
+  }
+
+  .illustration__wrapper-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 64px;
-    padding-bottom: 70px;
-    background-color: #f2f2f2;
   }
 
   .illustration__column {
     width: 610px;
+    position: relative;
+    z-index: 5;
 
     &--left {
       padding-left: 40px;
       margin-bottom: 0;
+      padding-top: 63px;
+      padding-bottom: 68px;
     }
 
     &--right {
+      padding-top: 63px;
       position: relative;
       padding-right: 40px;
     }
@@ -157,7 +168,7 @@
 
   .illustration__description {
     width: 435px;
-    margin-bottom: 70px;
+    margin-bottom: 67px;
     padding: 0;
   }
 
@@ -166,8 +177,34 @@
     width: 370px;
   }
 
+  .illustration__numbers {
+    margin-bottom: 68px;
+  }
+
   .illustration__list {
     position: absolute;
-    top: -330px;
+    top: -260px;
+    width: 677px;
+    margin-bottom: 0;
+  }
+
+  .illustration__item--before {
+    left: -57.5%;
+  }
+
+  .illustration__item:last-child {
+    left: 42%;
+  }
+
+  .illustration__image {
+    top: 5px;
+
+    &--before {
+      left: 46%;
+    }
+
+    &--after {
+      left: -53%;
+    }
   }
 }

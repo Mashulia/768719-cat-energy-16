@@ -5,11 +5,33 @@
   color: #222222;
   text-transform: uppercase;
   cursor: pointer;
+
+  &--weight {
+    margin-right: 16px;
+  }
+
+  &--age {
+    margin-right: 15px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .label {
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .label {
+    margin-right: 16px;
+
+    &--weight {
+      margin-right: 21px;
+    }
+
+    &--age {
+      margin-right: 17px;
+    }
   }
 }

@@ -3,8 +3,24 @@
   padding: 15px;
   border: 1px solid rgba(205, 205, 205, 0.5);
 
+  &--name {
+    padding-top: 14px;
+    padding-bottom: 13px;
+  }
+
+  &--weight,
+  &--age {
+    padding-top: 11px;
+    padding-bottom: 14px;
+  }
+
+  &--mail,
+  &--tel {
+    padding: 12px 15px 14px;
+  }
+
   &--text {
-    padding: 13px 11px;
+    padding: 13px 14px;
     width: 100%;
     min-height: 150px;
   }
@@ -42,7 +58,7 @@
 
   &--tel {
     top: 30%;
-    right: 9%;
+    right: 10%;
     width: 20px;
     height: 20px;
   }
@@ -57,10 +73,10 @@
     }
 
     &--text {
-      margin: 0 70px;
-      width: 82.3%;
+      margin: 0 65px 0 69px;
+      width: 82.6%;
       min-height: 174px;
-      padding: 16px;
+      padding: 13px 17px;
     }
 
     &::placeholder {
@@ -71,18 +87,18 @@
 
   .input__icon--mail {
     top: 37.5%;
-    right: 2.5%;
+    right: 2.8%;
     width: 18px;
     height: 14px;
   }
 
   .input__icon--tel {
     top: 33%;
-    right: 2%;
+    right: 2.5%;
   }
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .input::placeholder {
     font-size: 20px;
     line-height: 20px;
@@ -91,5 +107,13 @@
   .input--text {
     width: 94%;
     margin: 0 40px;
+  }
+
+  .input__icon--mail {
+    right: 3.8%;
+  }
+
+  .input__icon--tel {
+    right: 3%;
   }
 }
