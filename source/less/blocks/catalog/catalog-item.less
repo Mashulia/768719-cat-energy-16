@@ -12,17 +12,21 @@
     margin-bottom: 7px;
     width: 100%;
 
-    &::before {
+    &::before,
+    &::after {
       content: "";
       position: absolute;
-      top: -56px;
+      top: -40px;
       left: 50%;
       margin-left: -16px;
       width: 31px;
-      height: 31px;
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      background-image: url("../../img/icon-plus-mobile.svg");
+      height: 2px;
+      background-color: #222222;
+      opacity: 0.2;
+    }
+
+    &::after {
+      transform: rotate(90deg);
     }
   }
 }
@@ -118,14 +122,13 @@
       margin-bottom: 28px;
       width: 134px;
 
-      &::before {
-        top: -109px;
+      &::before,
+      &::after {
+        top: -80px;
         left: 50%;
-        margin-left: -32px;
+        margin-left: -30px;
         width: 61px;
-        height: 61px;
-        opacity: 0.2;
-        background-image: url("../../img/icon-plus.svg");
+        height: 1px;
       }
     }
   }

@@ -46,7 +46,7 @@
     left: 30px;
     width: 35px;
     height: 49px;
-    background-image: url("../../img/icon-cat-slim.svg");
+    background-image: url("../img/icon-cat-slim.svg");
   }
 
   &--gain-weight::after {
@@ -54,7 +54,7 @@
     left: 13px;
     width: 67px;
     height: 28px;
-    background-image: url("../../img/icon-cat-pro.svg");
+    background-image: url("../img/icon-cat-pro.svg");
   }
 }
 
@@ -88,13 +88,23 @@
   &::after {
     content: "";
     position: absolute;
+    top: 28px;
+    right: -32px;
+    width: 21px;
+    height: 3px;
+    background-color: #111111;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
     top: 24px;
-    right: -36px;
-    width: 24px;
-    height: 11px;
-    background-image: url("../../img/icon-right-arrow-long.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    right: -35px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-left-color: #111111;
+    border-right: 0;
   }
 }
 
@@ -168,16 +178,19 @@
     }
 
     &::after {
+      top: 14px;
+      right: -44px;
+    }
+
+    &::before {
       top: 10px;
-      right: -48px;
+      right: -47px;
     }
 
     &:hover::after,
     &:focus::after {
-      right: -44px;
-      width: 33px;
-      height: 11px;
-      background-image: url("../../img/icon-right-arrow-verylong.svg");
+      // right: -44px;
+      width: 30px;
     }
 
     &:active::after {
