@@ -34,8 +34,9 @@
     border-color: #444444;
   }
 
-  &:focus ~ .input__icon path,
-  &:active ~ .input__icon path {
+  &:hover ~ .input__icon,
+  &:focus ~ .input__icon,
+  &:active ~ .input__icon {
     fill: @main-color;
   }
 
@@ -48,6 +49,7 @@
 
 .input__icon {
   position: absolute;
+  fill: #666666;
 
   &--mail {
     top: 34%;
