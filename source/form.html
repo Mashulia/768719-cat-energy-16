@@ -16,6 +16,7 @@
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Кэт энерджи">
           </picture>
+        </a>
       </div>
       <nav class="main-nav main-nav--opened ">
         <button class="main-nav__toggle" type="button">
@@ -36,9 +37,9 @@
         </div>
       </nav>
     </header>
-    <main class="page-selection container">
-      <h1 class="page-selection__title main-title">Подбор программы</h1>
-      <p class="page-selection__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+    <main class="page-selection">
+      <h1 class="page-selection__title main-title container">Подбор программы</h1>
+      <p class="page-selection__text container">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
       <form class="page-selection__form form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form__wrapper-field container">
           <fieldset class="form__item form__item--common">
@@ -82,7 +83,7 @@
             <legend class="subtitle__title subtitle__title--contacts">Контактные данные (владельца кота)</legend>
             <span class="subtitle__line subtitle__line--contacts"></span>
           </div>
-          <ul class="form__list contacts-list">
+          <ul class="form__list contacts-list container">
             <li class="contacts-list__item">
               <label class="contacts-list__label label" for="mail">E-mail:*</label>
               <input class="input input--mail" id="mail" type="email" name="mail" placeholder="kuklachev@gmail.com">
@@ -102,7 +103,7 @@
             <span class="subtitle__line subtitle__line--comment"></span>
           </div>
           <label class="visually-hidden" for="text">Расскажите о своем коте</label>
-          <div class="form__wrapper-text">
+          <div class="form__wrapper-text container">
             <textarea class="input input--text" id="text" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
@@ -112,7 +113,7 @@
             <legend class="subtitle__title subtitle__title--additional">Дополнительно</legend>
             <span class="subtitle__line subtitle__line--additional"></span>
           </div>
-          <ul class="form__list additional-list">
+          <ul class="form__list additional-list container">
             <li class="additional-list__item">
               <input class="visually-hidden form__input form__input--checkbox" type="checkbox" id="sweetener" name="sweetener" checked>
               <label class="additional-list__label label" for="sweetener">Сахарозаменитель</label>
@@ -131,7 +132,7 @@
             </li>
           </ul>
         </fieldset>
-        <div class="form__wrapper-button">
+        <div class="form__wrapper-button container">
           <button class="form__button button" type="button">Отправить заявку</button>
           <span class="form__note">* — Обязательные поля</span>
         </div>
