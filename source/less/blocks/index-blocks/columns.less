@@ -189,11 +189,17 @@
 
     &:hover::after,
     &:focus::after {
-      // right: -44px;
+      right: -53px;
       width: 30px;
     }
 
-    &:active::after {
+    &:hover::before,
+    &:focus::before {
+      right: -56px;
+    }
+
+    &:active::after,
+    &:active::before {
       opacity: 0.3;
     }
   }
