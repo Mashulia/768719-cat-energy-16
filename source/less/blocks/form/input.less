@@ -2,6 +2,9 @@
   flex-grow: 1;
   padding: 15px;
   border: 1px solid rgba(205, 205, 205, 0.5);
+  .text-typeface-1();
+  font-size: 16px;
+  text-transform: uppercase;
 
   &--name {
     padding-top: 14px;
@@ -45,10 +48,10 @@
     font-size: 16px;
     text-transform: uppercase;
   }
-}
 
-.input__error {
-  border: 2px solid #ff8282;
+  &--error {
+    border: 2px solid #ff8282;
+  }
 }
 
 .input__icon {
@@ -68,11 +71,17 @@
     width: 20px;
     height: 20px;
   }
+
+  &--error {
+    fill: #ff8282;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .input {
     padding: 16px 20px;
+    font-size: 20px;
+    line-height: 20px;
 
     &--tel {
       padding: 17px;
