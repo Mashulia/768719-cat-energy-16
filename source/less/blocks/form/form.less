@@ -7,8 +7,8 @@
   }
 
   &--programm {
-    padding: 27px 0;
     margin-bottom: 27px;
+    padding: 27px 0;
     border: 1px solid #ededed;
   }
 
@@ -26,8 +26,8 @@
 }
 
 .form__list {
-  .indents();
   .reset-list();
+  .indents();
 }
 
 .form__input--radio + .programm-list__label::before {
@@ -95,20 +95,19 @@
 }
 
 .form__button {
-  width: 100%;
+  margin-bottom: 20px;
   padding-top: 11px;
   padding-bottom: 11px;
-  margin-bottom: 20px;
-  font-size: 16px;
-  line-height: 20px;
+  width: 100%;
 }
 
 .form__note {
   display: block;
   margin-bottom: 32px;
   font-family: @font-text;
-  .text-typeface-1();
+  font-size: 14px;
   line-height: 16px;
+  color: @text-color;
   text-align: center;
 }
 
@@ -122,8 +121,8 @@
     }
 
     &--common {
-      padding: 0 65px 0 70px;
       margin-bottom: 70px;
+      padding: 0 65px 0 70px;
     }
 
     &--programm {
@@ -136,10 +135,10 @@
   }
 
   .form__input--radio + .programm-list__label::before {
-    width: 40px;
-    height: 40px;
     top: -10px;
     left: -11.5%;
+    width: 40px;
+    height: 40px;
   }
 
   .form__input--radio:checked + .programm-list__label::after {
@@ -186,8 +185,8 @@
   }
 
   .form__note {
-    width: 192px;
     margin-bottom: 0;
+    width: 192px;
     font-size: 16px;
     line-height: 16px;
   }
@@ -249,8 +248,8 @@
   }
 
   .form__button {
-    width: 570px;
     margin-right: 46px;
+    width: 570px;
   }
 
   .form__note {
@@ -259,7 +258,7 @@
 
   .form__wrapper-button {
     margin: 0 auto;
-    padding: 0 42px;
     margin-bottom: 82px;
+    padding: 0 42px;
   }
 }

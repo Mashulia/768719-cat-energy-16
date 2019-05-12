@@ -7,9 +7,7 @@
 .contacts__title {
   .reset-indents();
   width: 320px;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
+  .main-typeface();
   text-transform: uppercase;
 }
 
@@ -17,9 +15,10 @@
   margin-left: auto;
   width: 320px;
   font-family: @font-text;
-  .text-typeface-1();
+  font-size: 14px;
   line-height: 20px;
   font-style: normal;
+  color: @text-color;
 }
 
 @media (min-width: @tablet-width) {
@@ -43,8 +42,7 @@
     justify-content: space-between;
     width: 25%;
     min-height: 80px;
-    font-size: 16px;
-    line-height: 20px;
+    .main-typeface();
     text-align: right;
   }
 }
@@ -55,9 +53,9 @@
     z-index: 100;
     top: 94px;
     left: 7.6%;
+    padding: 65px 90px 59px 76px;
     width: 570px;
     height: 201px;
-    padding: 65px 90px 59px 76px;
     background-color: #ffffff;
   }
 
