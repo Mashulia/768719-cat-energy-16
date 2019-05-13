@@ -3,8 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Кэт энерджи. Подбор программы</title>
+    <meta name="description" content="Подбор программы функционального питания для котиков">
+    <meta name="keywords" content="Анкета, контактные данные, комментарии, дополнительно">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensans.woff" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff" as="font">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="inner">
@@ -13,7 +19,7 @@
     </div>
     <header class="page-header container">
       <div class="page-header__wrapper">
-        <a class="logo page-header__logo">
+        <a class="logo page-header__logo" href="index.html">
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -50,11 +56,11 @@
             <ul class="form__list common-list">
               <li class="common-list__item">
                 <label class="common-list__label label" for="name">Имя:*</label>
-                <input class="common-list__input input input--name" id="name" type="text" name="name" placeholder="Барсик">
+                <input class="common-list__input input input--name" id="name" type="text" name="name" placeholder="Барсик" required>
               </li>
               <li class="common-list__item">
                 <label class="common-list__label label label--weight" for="weight">Вес (кг):*</label>
-                <input class="common-list__input input input--weight" id="weight" type="number" name="weight" placeholder="7">
+                <input class="common-list__input input input--weight" id="weight" type="number" name="weight" placeholder="7" required>
               </li>
               <li class="common-list__item">
                 <label class="common-list__label label label--age" for="age">Возраст (лет):</label>
@@ -89,16 +95,16 @@
           <ul class="form__list contacts-list container">
             <li class="contacts-list__item">
               <label class="contacts-list__label label" for="mail">E-mail:*</label>
-              <input class="input input--mail" id="mail" type="email" name="mail" placeholder="kuklachev@gmail.com">
+              <input class="input input--mail" id="mail" type="email" name="mail" placeholder="kuklachev@gmail.com" required>
               <svg class="input__icon input__icon--mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 13" width="18" height="14">
                 <use xlink:href="#icon-mail"></use>
               </svg>
             </li>
             <li class="contacts-list__item">
               <label class="contacts-list__label label" for="tel">Телефон:*</label>
-              <input class="input input--tel" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90">
+              <input class="input input--tel" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
               <svg class="input__icon input__icon--tel" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="21" height="21">
-                <use xlink:href="#icon-tel"></use>
+                <use xlink:href="#icon-phone"></use>
               </svg>
             </li>
           </ul>
@@ -209,7 +215,8 @@
         </div>
       </div>
     </footer>
-    <script src="js/picturefill.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/validaty.min.js"></script>
   </body>
 </html>

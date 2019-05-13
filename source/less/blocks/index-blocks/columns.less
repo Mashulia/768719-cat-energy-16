@@ -5,7 +5,7 @@
 
 .columns__item {
   padding: 30px 0 20px 0;
-  background-color: @grey-color;
+  background-color: @bg-color;
 
   &--slimming {
     margin-bottom: 20px;
@@ -15,11 +15,11 @@
 .columns__title {
   position: relative;
   .reset-indents();
-  padding-left: 91px;
   margin-bottom: 29px;
+  padding-left: 91px;
   font-size: 24px;
-  font-weight: 400;
   line-height: 37px;
+  font-weight: 400;
   text-align: left;
   text-transform: uppercase;
 
@@ -65,6 +65,7 @@
   margin-bottom: 40px;
   font-family: @font-text;
   .text-typeface-1();
+  color: @text-color;
 
   &::after {
     content: "";
@@ -150,8 +151,8 @@
   }
 
   .columns__description {
-    padding: 0;
     margin-bottom: 56px;
+    padding: 0;
     font-size: 16px;
     line-height: 24px;
 
@@ -189,11 +190,17 @@
 
     &:hover::after,
     &:focus::after {
-      // right: -44px;
+      right: -53px;
       width: 30px;
     }
 
-    &:active::after {
+    &:hover::before,
+    &:focus::before {
+      right: -56px;
+    }
+
+    &:active::after,
+    &:active::before {
       opacity: 0.3;
     }
   }
@@ -209,13 +216,13 @@
 
   .columns__item {
     width: 570px;
-    padding: 76px 56px 62px 52px;
     margin-bottom: 0;
+    padding: 76px 56px 62px 52px;
   }
 
   .columns__title {
-    padding-left: 162px;
     margin-bottom: 73px;
+    padding-left: 162px;
 
     &::before {
       top: -30px;
@@ -240,7 +247,7 @@
   }
 
   .columns__description {
-    width: 100%;
     margin-bottom: 30px;
+    width: 100%;
   }
 }

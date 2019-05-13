@@ -2,6 +2,11 @@
   flex-grow: 1;
   padding: 15px;
   border: 1px solid rgba(205, 205, 205, 0.5);
+  .text-typeface-1();
+  font-size: 16px;
+  text-transform: uppercase;
+  color: @text-color;
+  vertical-align: middle;
 
   &--name {
     padding-top: 14px;
@@ -31,7 +36,7 @@
 
   &:focus,
   &:active {
-    border-color: #444444;
+    border: 2px solid #444444;
   }
 
   &:hover ~ .input__icon,
@@ -44,6 +49,11 @@
     .text-typeface-1();
     font-size: 16px;
     text-transform: uppercase;
+    color: @text-color;
+  }
+
+  &--error {
+    border: 2px solid #ff8282;
   }
 }
 
@@ -64,14 +74,25 @@
     width: 20px;
     height: 20px;
   }
+
+  &--error {
+    fill: #ff8282;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .input {
-    padding: 16px 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &--mail {
+      padding-top: 9px;
+      padding-bottom: 13px;
+    }
 
     &--tel {
-      padding: 17px;
+      padding: 10px 20px 10px 17px;
     }
 
     &--text {
@@ -101,14 +122,19 @@
 }
 
 @media (min-width: @desktop-width) {
-  .input::placeholder {
+  .input {
     font-size: 20px;
     line-height: 20px;
-  }
 
-  .input--text {
-    width: 94%;
-    margin: 0 40px;
+    &::placeholder {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &--text {
+      width: 94%;
+      margin: 0 40px;
+    }
   }
 
   .input__icon--mail {

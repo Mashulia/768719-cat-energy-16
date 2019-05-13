@@ -1,12 +1,12 @@
 .illustration {
   padding-bottom: 37px;
   padding-top: 18px;
-  background-color: @grey-color;
+  background-color: @bg-color;
 }
 
 .illustration__title {
-  padding-left: 20px;
   margin-bottom: 22px;
+  padding-left: 20px;
 }
 
 .illustration__column--left {
@@ -16,8 +16,8 @@
 .illustration__description {
   .reset-indents();
   .text-typeface-1();
-  padding-right: 14px;
   margin-bottom: 25px;
+  padding-right: 14px;
   font-family: @font-text;
 }
 
@@ -33,8 +33,8 @@
   position: absolute;
   top: 0;
   left: 50%;
-  width: 311px;
   margin-left: -155px;
+  width: 311px;
 
   &:last-child {
     display: none;
@@ -42,9 +42,9 @@
 }
 
 .illustration__image {
+  margin-bottom: 35px;
   width: 311px;
   height: 232px;
-  margin-bottom: 35px;
 }
 
 @media (min-width: @tablet-width) {
@@ -61,11 +61,11 @@
   }
 
   .illustration__description {
+    margin-bottom: 54px;
     padding-left: 30px;
     padding-right: 40px;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 54px;
   }
 
   .illustration__table {
@@ -81,8 +81,8 @@
   }
 
   .illustration__column--left {
-    padding: 0;
     margin-bottom: 75px;
+    padding: 0;
   }
 
   .illustration__column--right {
@@ -93,8 +93,8 @@
     display: flex;
     z-index: 3;
     margin-bottom: 114px;
-    min-height: 517px;
     width: 768px;
+    min-height: 517px;
   }
 
   .illustration__item {
@@ -112,11 +112,11 @@
 
   .illustration__image {
     position: absolute;
-    width: 690px;
-    height: 517px;
     top: 11px;
     left: 56%;
     margin-bottom: 0;
+    width: 690px;
+    height: 517px;
 
     &--after {
       left: -44%;
@@ -153,8 +153,8 @@
     z-index: 5;
 
     &--left {
-      padding-left: 40px;
       margin-bottom: 0;
+      padding-left: 40px;
       padding-top: 63px;
       padding-bottom: 68px;
     }
@@ -183,17 +183,21 @@
 
   .illustration__list {
     position: absolute;
-    top: -260px;
-    width: 677px;
+    top: -195px;
     margin-bottom: 0;
+    width: 677px;
   }
 
-  .illustration__item--before {
-    left: -57.5%;
-  }
+  .illustration__item {
+    height: 547px;
 
-  .illustration__item:last-child {
-    left: 42%;
+    &--before {
+      left: -57.5%;
+    }
+
+    &:last-child {
+      left: 42%;
+    }
   }
 
   .illustration__image {
