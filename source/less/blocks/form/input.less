@@ -6,6 +6,7 @@
   font-size: 16px;
   text-transform: uppercase;
   color: @text-color;
+  vertical-align: middle;
 
   &--name {
     padding-top: 14px;
@@ -81,7 +82,7 @@
 
 @media (min-width: @tablet-width) {
   .input {
-    padding: 7px 20px 13px 20px;
+    padding: 10px 20px;
     font-size: 20px;
     line-height: 20px;
 
@@ -121,14 +122,19 @@
 }
 
 @media (min-width: @desktop-width) {
-  .input::placeholder {
+  .input {
     font-size: 20px;
     line-height: 20px;
-  }
 
-  .input--text {
-    width: 94%;
-    margin: 0 40px;
+    &::placeholder {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &--text {
+      width: 94%;
+      margin: 0 40px;
+    }
   }
 
   .input__icon--mail {
